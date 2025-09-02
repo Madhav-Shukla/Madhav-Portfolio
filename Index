@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Madhav Shukla's Portfolio, Blog, Services, and Educational Resources" />
+  <title>Madhav Shukla | Portfolio & Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #eee;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Madhav Shukla</h1>
+    <p>Industrial Engineer | Educator | Consultant</p>
+  </header>
+
+  <nav>
+    #blogBlog</a>
+    #servicesServices</a>
+    #resourcesResources</a>
+    #contactContact</a>
+  </nav>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="card">
+      <h3>Post Title</h3>
+      <p>Short summary of your blog post. You can link to full articles or expand this section.</p>
+    </div>
+    <!-- Add more blog cards as needed -->
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Details about your consulting services, availability, and how to contact you.</p>
+    </div>
+    <!-- Add more service cards -->
+  </section>
+
+  <section id="resources">
+    <h2>Educational Resources</h2>
+    <div class="card">
+      <h3>Guide Title</h3>
+      <p>Brief description of the resource. You can link to PDFs or external articles.</p>
+    </div>
+    <!-- Add more resource cards -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: #Your Profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Madhav Shukla. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
