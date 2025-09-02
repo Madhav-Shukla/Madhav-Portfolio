@@ -6,81 +6,120 @@
   <title>Madhav Shukla | Industrial Engineer & Educator</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #f4f4f4;
       color: #333;
     }
+
     header {
-      background-color: #2c3e50;
+      height: 300px;
       color: white;
-      padding: 1rem;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
     }
+
+    nav {
+      margin-top: 1rem;
+    }
+
     nav a {
       margin: 0 1rem;
-      color: #ecf0f1;
+      color: white;
       text-decoration: none;
+      font-weight: bold;
     }
+
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+
+    .timeline {
+      border-left: 3px solid #2c3e50;
+      padding-left: 1rem;
     }
+
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-entry h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
     .linkedin-logo {
       width: 24px;
       vertical-align: middle;
       margin-right: 8px;
     }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
-  <header>
+
+  <header id="dynamic-header">
     <h1>Madhav Shukla</h1>
     <p>Industrial Engineer | Educator | Spiritual Explorer</p>
     <nav>
       #aboutAbout</a>
-      #servicesConsulting</a>
-      #educationEducation</a>
-      #spiritualitySpirituality</a>
+      #timelineJourney</a>
       #contactContact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Welcome! I’m Madhav Shukla, an Industrial Engineer with a passion for teaching and spiritual growth. I help organizations optimize systems while guiding individuals toward inner clarity.</p>
+    <p>I’m Madhav Shukla, an Industrial Engineer with a passion for teaching and spiritual growth. I help organizations optimize systems while guiding individuals toward inner clarity.</p>
   </section>
 
-  <section id="services">
-    <h2>Consulting Services</h2>
-    <p>Lean manufacturing, process improvement, and systems engineering tailored for modern industries.</p>
-  </section>
-
-  <section id="education">
-    <h2>Educational Resources</h2>
-    <p>Workshops, tutorials, and mentoring for aspiring engineers and professionals.</p>
-  </section>
-
-  <section id="spirituality">
-    <h2>Spiritual Insights</h2>
-    <p>Reflections, meditations, and teachings that support personal growth and mindfulness.</p>
+  <section id="timeline">
+    <h2>Industrial Engineering Journey</h2>
+    <div class="timeline">
+      <div class="timeline-entry">
+        <h3>Industrial Revolution</h3>
+        <p>Mechanization, steam power, and the birth of factories.</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>Scientific Management</h3>
+        <p>Frederick Taylor’s time studies and efficiency principles.</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>Lean Manufacturing</h3>
+        <p>Toyota Production System, waste reduction, and continuous improvement.</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>Automation & Robotics</h3>
+        <p>Integration of machines and control systems in production.</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>Data Science & AI</h3>
+        <p>Predictive analytics, smart factories, and intelligent decision-making.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: Madhav14694@gmail.com</p>
-    <p> LinkedIn: https://www.linkedin.com/in/madhav-shukla
+    <p>Email: your.email@example.com</p>
+    <p>
+      https://www.linkedin.com/in/madhav-shukla
+        https://cdn-icons-png.flaticon.com/512/174/174857.png
+        Connect on LinkedIn
       </a>
     </p>
   </section>
@@ -88,6 +127,26 @@
   <footer>
     <p>&copy; 2025 Madhav Shukla. All rights reserved.</p>
   </footer>
+
+  <script>
+    const header = document.getElementById('dynamic-header');
+    const images = [
+      'https://images.unsplash.com/photo-1581091870620-3b6a1f3b6c4e', // factory
+      'https://images.unsplash.com/photo-1581090700227-1e7e8f3b6c4e', // gears
+      'https://images.unsplash.com/photo-1581090700227-1e7e8f3b6c4e', // AI
+      'https://images.unsplash.com/photo-1581090700227-1e7e8f3b6c4e', // data
+    ];
+
+    let index = 0;
+    function changeBackground() {
+      header.style.backgroundImage = `url('${images[index]}')`;
+      index = (index + 1) % images.length;
+    }
+
+    changeBackground(); // initial
+    setInterval(changeBackground, 5000); // every 5 seconds
+  </script>
+
 </body>
 </html>
 
