@@ -3,122 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Madhav Shukla | Industrial Engineer & Educator</title>
+  <title>Madhav Shukla | Engineer • Educator • Explorer</title>
+  https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap
   <style>
+    :root {
+      --bg-dark: #1a1a1a;
+      --text-light: #f4f4f4;
+      --accent: #00bfa5;
+      --font-main: 'Montserrat', sans-serif;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: var(--font-main);
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      overflow-x: hidden;
     }
 
     header {
-      height: 300px;
-      color: white;
-      text-align: center;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-size: cover;
-      background-position: center;
-      transition: background-image 1s ease-in-out;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+      animation: backgroundShift 5s infinite alternate ease-in-out;
+    }
+
+    @keyframes backgroundShift {
+      0% { background: linear-gradient(135deg, #1a1a1a, #2c3e50); }
+      100% { background: linear-gradient(135deg, #2c3e50, #1a1a1a); }
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: var(--accent);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
     }
 
     nav {
-      margin-top: 1rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(26, 26, 26, 0.9);
+      padding: 1rem;
+      text-align: center;
+      z-index: 1000;
     }
 
     nav a {
+      color: var(--text-light);
       margin: 0 1rem;
-      color: white;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
     }
 
     section {
-      padding: 2rem;
+      padding: 4rem 2rem;
       max-width: 900px;
       margin: auto;
     }
 
-    .timeline {
-      border-left: 3px solid #2c3e50;
-      padding-left: 1rem;
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
     }
 
     .timeline-entry {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .timeline-entry h3 {
       margin: 0;
-      color: #2c3e50;
+      font-size: 1.2rem;
+      color: var(--accent);
     }
 
-    .linkedin-logo {
-      width: 24px;
-      vertical-align: middle;
-      margin-right: 8px;
+    .thoughts {
+      background-color: #222;
+      padding: 2rem;
+      border-radius: 8px;
     }
 
     footer {
-      background-color: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem;
+      background-color: #111;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <header id="dynamic-header">
+  <nav>
+    #aboutAbout</a>
+    #journeyJourney</a>
+    #thoughtsThoughts</a>
+    #contactContact</a>
+  </nav>
+
+  <header>
     <h1>Madhav Shukla</h1>
-    <p>Industrial Engineer | Educator | Spiritual Explorer</p>
-    <nav>
-      #aboutAbout</a>
-      #timelineJourney</a>
-      #contactContact</a>
-    </nav>
+    <p>Industrial Engineer • Educator • Explorer of Systems & Self</p>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>I’m Madhav Shukla, an Industrial Engineer with a passion for teaching and spiritual growth. I help organizations optimize systems while guiding individuals toward inner clarity.</p>
+    <h2 class="section-title">About Me</h2>
+    <p>I blend the precision of engineering with the depth of education and the clarity of spiritual insight. My mission is to help systems — industrial and human — flow better.</p>
   </section>
 
-  <section id="timeline">
-    <h2>Industrial Engineering Journey</h2>
-    <div class="timeline">
-      <div class="timeline-entry">
-        <h3>Industrial Revolution</h3>
-        <p>Mechanization, steam power, and the birth of factories.</p>
-      </div>
-      <div class="timeline-entry">
-        <h3>Scientific Management</h3>
-        <p>Frederick Taylor’s time studies and efficiency principles.</p>
-      </div>
-      <div class="timeline-entry">
-        <h3>Lean Manufacturing</h3>
-        <p>Toyota Production System, waste reduction, and continuous improvement.</p>
-      </div>
-      <div class="timeline-entry">
-        <h3>Automation & Robotics</h3>
-        <p>Integration of machines and control systems in production.</p>
-      </div>
-      <div class="timeline-entry">
-        <h3>Data Science & AI</h3>
-        <p>Predictive analytics, smart factories, and intelligent decision-making.</p>
-      </div>
+  <section id="journey">
+    <h2 class="section-title">Journey Through Engineering</h2>
+    <div class="timeline-entry">
+      <h3>Industrial Revolution</h3>
+      <p>Mechanization and mass production laid the foundation for modern systems.</p>
+    </div>
+    <div class="timeline-entry">
+      <h3>Lean & Six Sigma</h3>
+      <p>Efficiency, waste reduction, and continuous improvement became the norm.</p>
+    </div>
+    <div class="timeline-entry">
+      <h3>Automation & Robotics</h3>
+      <p>Machines began to think and act, transforming production lines.</p>
+    </div>
+    <div class="timeline-entry">
+      <h3>AI & Data Science</h3>
+      <p>Smart systems now predict, adapt, and evolve — merging engineering with intelligence.</p>
+    </div>
+  </section>
+
+  <section id="thoughts">
+    <h2 class="section-title">Thoughts & Reflections</h2>
+    <div class="thoughts">
+      <p>“Flow is not just in machines — it’s in minds, in moments, in meaning.”</p>
+      <p>“The most optimized system is one that serves both purpose and peace.”</p>
+      <p>“Teaching is engineering the soul — one insight at a time.”</p>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2 class="section-title">Contact</h2>
     <p>Email: your.email@example.com</p>
     <p>
       https://www.linkedin.com/in/madhav-shukla
-      Connect on LinkedIn
+        https://cdn-icons-png.flaticon.com/512/174/174857.png
+        Connect on LinkedIn
       </a>
     </p>
   </section>
@@ -127,26 +170,5 @@
     <p>&copy; 2025 Madhav Shukla. All rights reserved.</p>
   </footer>
 
-  <script>
-    const header = document.getElementById('dynamic-header');
-    const images = [
-      'https://images.unsplash.com/photo-1581091870620-3b6a1f3b6c4e', // factory
-      'https://images.unsplash.com/photo-1581090700227-1e7e8f3b6c4e', // gears
-      'https://images.unsplash.com/photo-1581090700227-1e7e8f3b6c4e', // AI
-      'https://images.unsplash.com/photo-1581090700227-1e7e8f3b6c4e', // data
-    ];
-
-    let index = 0;
-    function changeBackground() {
-      header.style.backgroundImage = `url('${images[index]}')`;
-      index = (index + 1) % images.length;
-    }
-
-    changeBackground(); // initial
-    setInterval(changeBackground, 5000); // every 5 seconds
-  </script>
-
 </body>
 </html>
-
- 
